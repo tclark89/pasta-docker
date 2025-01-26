@@ -1,0 +1,11 @@
+services:
+  app:
+    image: cglatot/pasta
+    networks:
+      - pasta
+
+networks:
+  pasta:
+    driver: overlay
+    external: true
+    name: pasta
